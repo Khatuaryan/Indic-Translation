@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.Python
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+**/.venv/
+
+# IDEs
+.idea/
+.vscode/
+
+# Project-specific
+outputs/
+google-key.json
+dataset_cache/
+IndicTransToolkit/
