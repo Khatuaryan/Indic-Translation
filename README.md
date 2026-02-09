@@ -1,84 +1,64 @@
-# Indic Translation: Kannada ↔ Marathi
+# Indic Translation Project
 
-This project implements bidirectional translation between Kannada (kn) and Marathi (mr) using multiple baseline models:
-- Google Translate API
-- IndicTrans2 (AI4Bharat)
-- Meta NLLB (No Language Left Behind)
+## Overview
+This project focuses on Indic language translation, specifically between Kannada (kn), Marathi (mr), and English (en).
 
-It includes scripts for processing datasets, running translations, and evaluating results using BLEU, CHRF, and WER metrics.
+The repository is organized into multiple components:
 
-## Setup
+-   **[Baseline Models](./Baseline/README.md)**: Contains baseline translation models (Google Translate, IndicTrans2, Meta NLLB) and evaluation scripts.
+-   **[Glossary Creation](./Glossary/)**: Scripts and resources for creating glossaries for English, Marathi, and Kannada. *(Documentation in progress)*
 
-### Prerequisites
+## Quick Start
 
-- Python 3.9+
-- [Git LFS](https://git-lfs.com/) (required for model weights)
+This repository is a collection of independent sub-projects. You can clone the entire repository and navigate to the specific project you need.
 
-### Installation
+### Option 1: Full Repository Setup (Recommended)
+Use this if you plan to explore multiple components or want the complete codebase.
 
-1. Clone the repository:
-   ```bash
-   git clone <repository_url>
-   cd Indic-Translation
-   ```
+1.  **Clone the repository:**
+    ```bash
+    git clone <repository_url>
+    cd Indic-Translation
+    ```
 
-2. Create and activate a virtual environment:
-   ```bash
-   python3 -m venv .venv
-   source .venv/bin/activate
-   ```
+2.  **Navigate to a sub-project:**
+    *   For Translation Models: `cd Baseline`
+    *   For Glossary Tools: `cd Glossary`
 
-3. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-   *Note: `IndicTransToolkit` is installed directly from GitHub as per `requirements.txt`.*
+### Option 2: Single Sub-project Setup (Advanced)
+If you only need a specific component (e.g., just the `Baseline` models) and want to save disk space, you can use a sparse checkout.
 
-### Configuration
+1.  **Initialize a new repository:**
+    ```bash
+    mkdir Indic-Translation && cd Indic-Translation
+    git init
+    git remote add origin <repository_url>
+    ```
 
-#### Google Translate
-To use the Google Translate baseline, you must provide a valid service account JSON key.
-1. Place your `google-key.json` file in the project root.
-2. **Important**: Ensure this file is ignored by git (it is added to `.gitignore` by default).
+2.  **Enable sparse checkout and download only the desired folder:**
+    ```bash
+    git config core.sparseCheckout true
+    # Replace 'Baseline/' with the directory you want (e.g., 'Glossary/')
+    echo "Baseline/" >> .git/info/sparse-checkout
+    git pull origin main
+    ```
 
-## Usage
+3.  **Navigate to the folder:**
+    ```bash
+    cd Baseline
+    ```
 
-### Running Baselines
+### Next Steps
 
-The baselines are located in the `baselines/` directory. Each script supports bidirectional translation based on the configurations defined in `baselines/config.py`.
+Once you have navigated to your desired sub-project, you **must** follow its specific documentation for setup and usage.
 
-**1. Google Translate Baseline:**
-```bash
-python models/base_google.py
-```
-
-**2. IndicTrans2 Baseline:**
-```bash
-python models/base_indictrans.py
-```
-
-**3. Meta NLLB Baseline:**
-```bash
-python models/base_meta.py
-```
-
-### Evaluation
-
-After running the baselines, translation outputs are saved in the `outputs/` directory structure:
-`outputs/<direction>/<model>/`
-
-To evaluate all generated translations:
-```bash
-python models/base_evaluate.py
-```
-This will generate evaluation reports (e.g., `evaluation_report.txt`) in the respective output folders.
+*   **[Read Baseline Documentation](./Baseline/README.md)**
+*   *(Glossary documentation coming soon)*
 
 ## Project Structure
 
-- `baselines/`: Contains the main scripts for models and evaluation.
-  - `config.py`: Central configuration for translation directions and paths.
-  - `base_*.py`: Model-specific translation scripts.
-  - `base_evaluate.py`: Evaluation script using SacreBLEU and JiWER.
-- `dataset/`: Contains source and reference files for translation.
-- `outputs/`: (Generated) Stores translation results and evaluation reports.
-- `requirements.txt`: Python package dependencies.
+-   **`Baseline/`**: Core translation models and evaluation logic.  
+    *(Self-contained environment for running translation experiments)*
+-   **`Glossary/`**: Glossary generation tools.
+-   `requirements.txt`: Common dependencies (check sub-projects for specific requirements).
+
