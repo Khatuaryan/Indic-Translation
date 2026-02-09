@@ -15,9 +15,10 @@ ENV/
 .idea/
 .vscode/
 .DS_Store
+**/.DS_Store
 
 # Project-specific
-outputs/
 google-key.json
 dataset_cache/
 IndicTransToolkit/
+temp.py
