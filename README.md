@@ -49,17 +49,17 @@ The baselines are located in the `baselines/` directory. Each script supports bi
 
 **1. Google Translate Baseline:**
 ```bash
-python baselines/base_google.py
+python models/base_google.py
 ```
 
 **2. IndicTrans2 Baseline:**
 ```bash
-python baselines/base_indictrans.py
+python models/base_indictrans.py
 ```
 
 **3. Meta NLLB Baseline:**
 ```bash
-python baselines/base_meta.py
+python models/base_meta.py
 ```
 
 ### Evaluation
@@ -69,7 +69,7 @@ After running the baselines, translation outputs are saved in the `outputs/` dir
 
 To evaluate all generated translations:
 ```bash
-python baselines/base_evaluate.py
+python models/base_evaluate.py
 ```
 This will generate evaluation reports (e.g., `evaluation_report.txt`) in the respective output folders.
 

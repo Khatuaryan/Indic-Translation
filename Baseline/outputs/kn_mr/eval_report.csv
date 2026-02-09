@@ -1,0 +1,31 @@
+Model,File,WER,CER,chrF,BLEU
+Google,10th-brics-summit-johannesburg-declaration_mr.txt,0.8196,0.5978,68.07,18.15
+Google,116th-meeting-of-trustees-of-somnath-trust-held-at-somnath_mr.txt,0.9,0.6495,53.24,23.84
+Google,15th-edition-of-pravasi-bharatiya-diwas-inaugurated-by-pm-in-varanasi_mr.txt,1.0,0.7651,64.36,17.95
+Google,31st-meeting-of-central-hindi-committee-concluded-under-the-chairmanship-of-pm_mr.txt,0.8211,0.5811,56.02,11.94
+Google,ambassador-ms-nikki-haley-united-states-permanent-representative-to-the-united-nations-calls-on-pm_mr.txt,0.7944,0.528,62.29,19.15
+Google,amendments-to-the-maternity-benefit-act-1961_mr.txt,3.4259,2.8954,36.72,3.9
+Google,anganwadi-workers-from-across-the-country-call-on-pm_mr.txt,0.8378,0.6155,51.2,12.44
+Google,artwork-made-with-pearls-presented-to-pm_mr.txt,0.8077,0.6041,42.3,6.51
+Google,asean-india-shared-values-common-destiny-narendra-modi_mr.txt,0.6733,0.4529,71.14,27.98
+Google,asha-representatives-from-across-the-country-call-on-pm_mr.txt,0.7452,0.5226,57.99,20.27
+IndicTrans2,10th-brics-summit-johannesburg-declaration_mr.txt,0.8631,0.6326,70.02,17.82
+IndicTrans2,116th-meeting-of-trustees-of-somnath-trust-held-at-somnath_mr.txt,3.9444,2.6885,43.06,7.61
+IndicTrans2,15th-edition-of-pravasi-bharatiya-diwas-inaugurated-by-pm-in-varanasi_mr.txt,1.3937,0.874,64.02,12.26
+IndicTrans2,31st-meeting-of-central-hindi-committee-concluded-under-the-chairmanship-of-pm_mr.txt,1.8632,0.8727,55.78,7.87
+IndicTrans2,ambassador-ms-nikki-haley-united-states-permanent-representative-to-the-united-nations-calls-on-pm_mr.txt,0.8224,0.5463,59.4,12.03
+IndicTrans2,amendments-to-the-maternity-benefit-act-1961_mr.txt,6.7407,3.5304,36.61,1.04
+IndicTrans2,anganwadi-workers-from-across-the-country-call-on-pm_mr.txt,2.2027,0.935,46.91,3.35
+IndicTrans2,artwork-made-with-pearls-presented-to-pm_mr.txt,0.8846,0.6135,49.5,8.12
+IndicTrans2,asean-india-shared-values-common-destiny-narendra-modi_mr.txt,0.811,0.5292,67.33,21.64
+IndicTrans2,asha-representatives-from-across-the-country-call-on-pm_mr.txt,0.7006,0.52,59.42,22.18
+Meta AI,10th-brics-summit-johannesburg-declaration_mr.txt,0.8108,0.6024,68.51,19.65
+Meta AI,116th-meeting-of-trustees-of-somnath-trust-held-at-somnath_mr.txt,0.9222,0.6511,49.08,15.43
+Meta AI,15th-edition-of-pravasi-bharatiya-diwas-inaugurated-by-pm-in-varanasi_mr.txt,1.0541,0.8145,62.21,15.1
+Meta AI,31st-meeting-of-central-hindi-committee-concluded-under-the-chairmanship-of-pm_mr.txt,0.8,0.5329,55.36,11.87
+Meta AI,ambassador-ms-nikki-haley-united-states-permanent-representative-to-the-united-nations-calls-on-pm_mr.txt,0.8224,0.608,56.04,13.22
+Meta AI,amendments-to-the-maternity-benefit-act-1961_mr.txt,3.2963,2.6107,40.08,2.3
+Meta AI,anganwadi-workers-from-across-the-country-call-on-pm_mr.txt,0.8986,0.6216,52.05,9.01
+Meta AI,artwork-made-with-pearls-presented-to-pm_mr.txt,0.8718,0.666,50.13,10.47
+Meta AI,asean-india-shared-values-common-destiny-narendra-modi_mr.txt,0.7408,0.5119,68.31,25.47
+Meta AI,asha-representatives-from-across-the-country-call-on-pm_mr.txt,0.758,0.5804,56.18,19.68
