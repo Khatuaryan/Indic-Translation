@@ -18,7 +18,7 @@ ENV/
 **/.DS_Store
 
 # Project-specific
-Baseline/setup/google-key.json
+Baseline/google-key.json
 dataset_cache/
 Baseline/IndicTransToolkit/
 temp.py
